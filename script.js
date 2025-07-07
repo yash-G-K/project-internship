@@ -119,6 +119,7 @@ document.addEventListener("mousemove",function(dets){
     });
 });
 
+//single query without function
 // document.querySelector("#child1").addEventListener("mouseenter",function(){
 //     gsap.to("#cursor",{
 //     transform: 'translate(-50%,-50%) scale(1)'
