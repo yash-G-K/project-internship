@@ -1,0 +1,22 @@
+.shop-footer {
+    background-color: #b5b4b4;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    padding: 50px;
+}
+
+.footer-sec {
+    width: 400px;
+    margin: 10px 10px;
+    border-right: 2px solid #de1212;
+}
+
+.footer-sec-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-data {
+    margin-left: 20px;
+}

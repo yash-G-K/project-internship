@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/review.css">
+  <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary py-2 position-fixed top-0 z-3" style="width: 100%;">
+    <div class="container-fluid mx-5">
+        <a class="navbar-brand ms-md-5 ms-md-0 fs-3 ha" href="#">Foodzie</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link ms-md-2 ms-md-0" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle ms-md-2 ms-md-0" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./maincourse.html">Maincourse</a></li>
+                        <li><a class="dropdown-item" href="./Stater.html">Stater</a></li>
+                        <li><a class="dropdown-item" href="./dessert.html">Dessert</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ms-md-2 ms-md-0" href="./review.html">Review</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ms-md-2 ms-md-0" href="./about.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ms-md-2 ms-md-0" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ms-md-2 ms-md-0" href="./login.html">Login/Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ms-md-2 ms-md-0 me-5 rounded active border bag text-center"
+                        href="./orderNow.html">Order
+                        Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+  <div class="mt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="my-md-5 my-sm-0 d-flex flex-wrap flex-wrap justify-content-around">
+          <img src="../images/review.png" class="col-md-6">
+          <div class="card col-md-5 col-xs-12 shadow p-md-4 px-5 w-xs-100 w-md-auto">
+            <h4 class="my-3">WRITE A REVIEW</h4>
+            <p class="mb-2">Name : </p>
+            <input type="text" placeholder="Enter Name" required class="mb-4 p-2 px-3 rounded border border-black"
+              id="input-Name">
+            <p class="mb-2 col-6">Review : </p>
+            <textarea name="Message" rows="4" placeholder="Write Your Review" required
+              class="p-3 rounded border border-black" id="input-Msg"></textarea>
+            <div class="mt-4 mb-4">
+              <button type="button" class="px-4 py-2 rounded bod" onclick="cancelReview()">&nbsp; Cancel &nbsp;</button>
+              <button type="button" class="px-5 py-2 rounded border bag" onclick="addReview()">Post</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-5 c-bag">
+    <div class="container">
+      <h1 class="text-center mb-4">WHAT PEOPLE SAY</h1>
+      <div class="row">
+        <div class="r-bag d-flex flex-wrap justify-content-evenly p-md-4" id="review-Box">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark py-2" style="color: #fff;">
+    <div class="container">
+        <div class="my-5 d-flex justify-content-between">
+            <div style="width: 50%;">
+                <h2 class="fs-2 ha fw-semibold" href="#">FOODZIE</h2>
+                <h5 class="mt-3">Contact</h5>
+                <ul style="list-style: none;">
+                    <li class="me-5">84, <span class="ha">FOODZIE</span>, Ram Nagar, Near Prasad Colony HBL Tower,<br> Yashvant Park,
+                        Nagpur-441108</li>
+                    <li class="me-5 mt-3">foodzie@info.com</li>
+                    <li class="me-5 mt-3">+91 9226724734</li>
+                </ul>
+            </div>
+            <div style="width: 30%;">
+                <h5 class="mt-3">Quick Links</h5>
+                <ul style="list-style: none;">
+                    <li class="me-5"><a style="text-decoration: none; color: #fff;" href="../index.html">Home</a>
+                    </li>
+                    <li class="me-5 mt-2"><a style="text-decoration: none; color: #fff;"
+                            href="./review.html">Review</a></li>
+                    <li class="me-5 mt-2"><a style="text-decoration: none; color: #fff;" href="./about.html">About
+                            Us</a></li>
+                    <li class="me-5 mt-2"><a style="text-decoration: none; color: #fff;"
+                            href="./contact.html">Contact Us</a></li>
+                    <li class="me-5 mt-2"><a style="text-decoration: none; color: #fff;"
+                            href="./login.html">Login</a></li>
+                </ul>
+            </div>
+            <div style="width: 20%;">
+                <h5 class="mt-3">Menu</h5>
+                <ul style="list-style: none;">
+                    <li class="me-5"><a style="text-decoration: none; color: #fff;" href="./maincourse.html">Maincourse</a>
+                    </li>
+                    <li class="me-5 mt-2"><a style="text-decoration: none; color: #fff;"
+                            href="./Stater.html">Stater</a></li>
+                    <li class="me-5 mt-2"><a style="text-decoration: none; color: #fff;"
+                            href="./dessert.html">Dessert</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-center">Copyright @ FOODZIE 2024</p>
+    </div>
+</footer>
+<script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="../js/review.js"></script>
+</body>
+
+</html>
